@@ -24,7 +24,7 @@ namespace PetWebApplication
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
-            services.AddMvcCore();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -41,6 +41,7 @@ namespace PetWebApplication
                 app.UseHsts();
             }
 
+
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
@@ -52,6 +53,19 @@ namespace PetWebApplication
             {
                 endpoints.MapRazorPages();
             });
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllerRoute("default", "{controller=HomePegeController}/{action=Index}");
+            });
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllerRoute("default", "{controller=HomePegeController}/{action=Index}");
+            });
+
+
+
         }
     }
 }
