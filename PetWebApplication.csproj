@@ -17,17 +17,6 @@
 
   <ItemGroup>
     <Folder Include="Models\" />
-    <Folder Include="Views\AdministretorHomePage\" />
-    <Folder Include="Views\Bascet\" />
-    <Folder Include="Views\CatalogPage\" />
-    <Folder Include="Views\CreateProductPage\" />
-    <Folder Include="Views\ContactsPage\" />
-    <Folder Include="Views\DecoratedOrdersPage\" />
-    <Folder Include="Views\EditorsPage\" />
-    <Folder Include="Views\PersonalAccountPage\" />
-    <Folder Include="Views\ProductPage\" />
-    <Folder Include="Views\SingUpPage\" />
-    <Folder Include="Views\StatisticsPage\" />
   </ItemGroup>
 
 </Project>
