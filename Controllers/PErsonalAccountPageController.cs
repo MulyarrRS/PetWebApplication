@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PetWebApplication.Controllers
 {
-    public class PErsonalAccountPageController : Controller
+    public class PersonalAccountPageController : Controller
     {
         public IActionResult Index()
         {
