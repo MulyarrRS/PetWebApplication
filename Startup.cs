@@ -58,6 +58,27 @@ namespace PetWebApplication
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute("default", "{controller=HomeController}/{action=Index}/{id?}");
+                
+                endpoints.MapControllerRoute("Product", "{controller=ProductPageController}/{action=Index}/{id?}");
+               
+                endpoints.MapControllerRoute("AdministretorPage", "{controller=AdministretorHomePageController}/{action=Index}/{id?}");
+                
+                endpoints.MapControllerRoute("Bascet", "{controller=BascetController}/{action=Index}");
+               
+                endpoints.MapControllerRoute("Catalog", "{controller=CatalogPageController}/{action=Index}/{id?}");
+               
+                endpoints.MapControllerRoute("Contacts", "{controller=ContactsPageController}/{action=Index}/{id?}");
+               
+                endpoints.MapControllerRoute("CreateProduct", "{controller=CreateProductPageController}/{action=Index}");
+              
+                endpoints.MapControllerRoute("DecoratedOrders", "{controller=DecoratedOrdersPageController}/{action=Index}");
+               
+                endpoints.MapControllerRoute("Editors", "{controller=EditorsPageController}/{action=Index}/{id?}");
+               
+                endpoints.MapControllerRoute("SingUp", "{controller=SingUpPageController}/{action=Index}");
+                
+                endpoints.MapControllerRoute("Statistics", "{controller=StatisticsPageController}/{action=Index}/{id?}");
+
             });
 
 
