@@ -54,14 +54,10 @@ namespace PetWebApplication
                 endpoints.MapRazorPages();
             });
 
+            
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllerRoute("default", "{controller=HomePegeController}/{action=Index}");
-            });
-
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllerRoute("default", "{controller=HomePegeController}/{action=Index}");
+                endpoints.MapControllerRoute("default", "{controller=HomeController}/{action=Index}/{id?}");
             });
 
 
