@@ -3,13 +3,37 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - PetWebApplication</title>
+    <title>@ViewData["Title"] - Магазин Конфетка</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar  navbar-light border-bottom box-shadow mb-1"  style="background-color: #e3f2fd; ">
+
+            <div class="container d-block ">
+                <a class="navbar-brand navbar-toggler " asp-area=" " asp-controller="/Home">
+                    <h2>Магазин Конфетка</h2>
+                </a> 
+                <div class="btn-group btn-group-lg" role="group">
+                    <button type="button" class="btn  btn-info" asp-area=" " asp-controller="/Home">Главная страница</button>
+                    <button type="button" class="btn btn-success" asp-area=" " asp-controller="/CatalogPage">Каталог</button>
+                    <button type="button" class="btn btn-info" asp-area=" " asp-controller="/Bascet">Корзина</button>
+                    <button type="button" class="btn btn-info" asp-area=" " asp-controller="/ContactsPage">Контакты</button>
+                    <button type="button" class="btn btn-info" asp-area=" " asp-controller="/PersonalAccountPage">Аккаунт</button>
+                </div>
+            </div>
+           
+
+        </nav>
+      
+    
+    
+    
+    
+    
+    
+    @*<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-page="/Index">PetWebApplication</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -27,7 +51,7 @@
                     </ul>
                 </div>
             </div>
-        </nav>
+        </nav>*@
     </header>
     <div class="container">
         <main role="main" class="pb-3">
